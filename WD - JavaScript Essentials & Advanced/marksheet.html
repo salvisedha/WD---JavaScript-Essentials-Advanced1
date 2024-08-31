@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Marksheet for information Technology</h1>
+    <h2>Enter marks </h2>
+
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">1. C Langauge</label></td>
+                <td><input type="number" name="" id="s1"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">2. C++ Langauge</label></td>
+                <td><input type="number" name="" id="s2"></td>
+            </tr>
+            <tr>
+                <td><label for="">3.Database</label></td>
+                <td><input type="number" name="" id="s3"></td>
+            </tr>
+            <tr>
+                <td><label for="">4.HTML </label></td>
+                <td><input type="number" name="" id="s4"></td>
+            </tr>
+            <tr>
+                <td><label for="">5. CSS</label></td>
+                <td><input type="number" name="" id="s5"></td>
+            </tr>
+            <tr>
+                <td><label for="">6. php</label></td>
+                <td><input type="number" name="" id="s6"></td>
+            </tr>
+            <tr>
+                <td><label for="">7. Core java</label></td>
+                <td><input type="number" name="" id="s7"></td>
+            </tr>
+
+        </table>
+    </form>
+    <button onclick="clr()">Result
+    </button>
+
+    <p>Total is <span id="result"> </span> /350 </p>
+    <p>Percentage is <span id="per"></span></p>
+
+    <!-- script  -->
+    <script>
+        let num1 = document.getElementById("s1");
+        let num2 = document.getElementById("s2");
+        let num3 = document.getElementById("s3");
+        let num4 = document.getElementById("s4");
+        let num5 = document.getElementById("s5");
+        let num6 = document.getElementById("s6");
+        let num7 = document.getElementById("s7");
+        let per = document.getElementById("per")
+        let total;
+        let percentage;
+        function clr() {
+            total = Number(num1.value) + Number(num2.value) + Number(num3.value) + Number(num4.value) + Number(num5.value) + Number(num6.value) + Number(num7.value);
+
+            
+            result.innerText = total;
+            percentage = (total * 100) / 350;
+            per.innerText = percentage;
+            per.style.color = "red";
+            result.style.color = "red";
+
+        }
+
+    </script>
+</body>
+
+</html>

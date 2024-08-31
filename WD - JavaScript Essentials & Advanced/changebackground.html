@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Background Color Change</title>
+    <style>
+        #slider-container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        #color-box {
+            width: 300px;
+            height: 150px;
+            background-color: #ff0000; /* Initial color */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="slider-container">
+        <input type="range" id="color-slider" min="0" max="255" value="0">
+        <div id="color-box"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#color-slider').on('input', function() {
+                var value = $(this).val();
+                var color = 'rgb(' + value + ', 0, 0)';
+                $('#color-box').animate({ backgroundColor: color }, 500);
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Toggle Example</title>
+    <style>
+        #content-box {
+            width: 300px;
+            height: 150px;
+            background-color: #87ceeb;
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+
+        #buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttons">
+        <button id="toggle-btn" class="button">Toggle</button>
+        <button id="show-btn" class="button">Show</button>
+        <button id="hide-btn" class="button">Hide</button>
+    </div>
+    <div id="content-box">
+        This is the content that will be toggled.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#toggle-btn').click(function () {
+                $('#content-box').slideToggle(500);
+            });
+
+            $('#show-btn').click(function () {
+                $('#content-box').slideDown(500);
+            });
+
+            $('#hide-btn').click(function () {
+                $('#content-box').slideUp(500);
+            });
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
